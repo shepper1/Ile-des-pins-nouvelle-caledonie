@@ -1,0 +1,754 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évasion Turquoise : L'Île des Pins, Joyau du Pacifique </title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        template: {
+                            sable: '#F3E5AB',
+                            ocre: '#C66B3D',
+                            roche: '#2D2A26',
+                            ciel: '#4A6C6F',
+                            bg: '#FAFAF9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #C66B3D;
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">Évasion Turquoise : L'Île des Pins, Joyau du Pacifique</a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Envol vers le Paradis Pacifique</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Douce arrivée sur l'Île des Pins</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Les Plages Iconiques de Kuto et Kanumera</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 La Magie de la Piscine Naturelle d'Oro</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Aventure en Pirogue dans la Baie d'Upi</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Panoramas Éblouissants du Pic N'Ga</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Culture Kanak et Histoire de l'Île</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Évasion vers les Îlots du Sud</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Sentier des Baies et Plages Secrètes</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Immersion Locale ou Journée Détente</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Journée Libre, Vos Coups de Cœur</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Coucher de Soleil et Saveurs Locales</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Derniers Plaisirs Insulaires</a>
+            
+                <a href="#jour-14" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J14 Retour vers la Métropole</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[85vh] flex items-center justify-center overflow-hidden pt-12 md:pt-0">
+        
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
+
+        <video autoplay muted loop playsinline 
+               poster="https://images.unsplash.com/photo-1579606946838-6db34433f3c0?q=80&w=2070"
+               class="absolute inset-0 w-full h-full object-cover">
+            <source src="https://videos.pexels.com/video-files/4456988/4456988-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.3em] mb-4 uppercase text-sm font-semibold">Feuille de Route</p>
+            <h1 class="font-Playfair italic text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">Ile des pins nouvelle-caledonie</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-light max-w-2xl mx-auto leading-relaxed">Évasion Turquoise : L'Île des Pins, Joyau du Pacifique</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">🗓️ 14 jours uniquement</span>
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">💰 6500€/personne / pers</span>
+                <span class="bg-white/10 backdrop-blur-md px-5 py-2 rounded-full border border-white/20 shadow-sm">🛬 Environ 24-30 heures (Paris - Nouméa) depuis Paris</span>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-20 relative">
+        
+        <div class="text-center mb-16">
+            <span class="text-template-ocre font-bold tracking-widest text-xs uppercase">Le Roadtrip</span>
+            <h2 class="font-serif text-4xl mt-2 text-template-roche">Votre Programme</h2>
+        </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Envol vers le Paradis Pacifique</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Votre aventure commence par un long voyage transcontinental. Préparez-vous à traverser les fuseaux horaires et à laisser derrière vous le quotidien pour une immersion totale dans la beauté sauvage de la Nouvelle-Calédonie. Le décollage de Paris marque le début d'une expérience inoubliable.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>✈️ <strong>Départ de Paris</strong>: Embarquez pour un vol long-courrier, prélude à votre échappée belle vers l'hémisphère sud. Profitez du voyage pour vous détendre et vous immerger dans l'ambiance des vacances.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">ℹ️ Conseil de vol</p>
+                                <p class="text-gray-700">Prévoyez un oreiller de voyage, des bouchons d'oreille et un masque de sommeil pour optimiser votre confort durant ce long trajet.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⌚ Décalage horaire</p>
+                                <p class="text-gray-700">L'Île des Pins a un décalage de +9 heures en été et +10 heures en hiver par rapport à Paris. Anticipez le jet lag.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Douce arrivée sur l'Île des Pins</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Après un vol intérieur depuis Nouméa, vous atterrissez sur l'Île des Pins, un véritable joyau. L'air marin et la végétation luxuriante vous accueillent. Prenez le temps de vous installer et de faire une première balade sereine pour vous imprégner de l'atmosphère unique de l'île.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🛬 <strong>Arrivée à l'Île des Pins</strong>: Atterrissage à l'aéroport de Moué, suivi d'un transfert vers votre hébergement. Laissez-vous charmer par les premiers aperçus de cette île paradisiaque.</li>
+                            
+                                <li>🚶‍♀️ <strong>Balade légère et installation</strong>: Profitez de l'après-midi pour vous détendre, vous installer et faire une courte promenade autour de votre hôtel. C'est le moment idéal pour s'habituer au rythme insulaire.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚗 Transfert aéroport</p>
+                                <p class="text-gray-700">Les hébergements organisent généralement des navettes depuis l'aéroport de Moué. Pensez à le réserver à l'avance.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Protection solaire</p>
+                                <p class="text-gray-700">Le soleil tropical est intense. N'oubliez pas crème solaire, chapeau et lunettes dès votre arrivée.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Les Plages Iconiques de Kuto et Kanumera</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez dans les eaux cristallines des plages de Kuto et Kanumera, deux des plus célèbres de l'île. Le sable blanc et fin invite à la détente, tandis que les fonds marins regorgent de vie. Une journée dédiée au farniente et à la découverte de la biodiversité marine.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🏖️ <strong>Détente à la Baie de Kuto</strong>: Profitez du sable blanc immaculé et des eaux turquoise de la Baie de Kuto, idéale pour la baignade et la relaxation. C'est une des plus belles plages du monde.</li>
+                            
+                                <li>🐠 <strong>Snorkeling à la Baie de Kanumera</strong>: Explorez les fonds marins peu profonds de la Baie de Kanumera, célèbre pour son rocher sacré et sa richesse sous-marine. N'oubliez pas votre masque et tuba.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗿 Rocher sacré</p>
+                                <p class="text-gray-700">Le rocher de Kanumera est un lieu sacré pour les Kanaks. Il est interdit d'y monter ou de le toucher par respect pour la culture locale.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍽️ Restauration locale</p>
+                                <p class="text-gray-700">Des petits "snacks" locaux proposent souvent des plats simples et délicieux à proximité des plages, comme du poisson grillé.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">La Magie de la Piscine Naturelle d'Oro</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Une journée dédiée à l'exploration de la légendaire Piscine Naturelle d'Oro. Ce bassin d'eau de mer, protégé par une barrière rocheuse, est un aquarium géant à ciel ouvert. Nagez au milieu des poissons multicolores dans un cadre idyllique et préservé.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🚶‍♀️ <strong>Randonnée vers la Piscine Naturelle</strong>: Empruntez un sentier ombragé le long de la rivière Oro pour atteindre ce joyau caché. La marche est facile et agréable, traversant une forêt luxuriante.</li>
+                            
+                                <li>🐠 <strong>Baignade et snorkeling à Oro</strong>: Plongez dans les eaux cristallines de la Piscine Naturelle, un véritable aquarium géant où poissons et coraux se côtoient. C'est une expérience magique et inoubliable.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⚠️ Accès</p>
+                                <p class="text-gray-700">L'accès à la Piscine Naturelle peut être soumis à une petite taxe locale. Prévoyez de la monnaie.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👟 Chaussures d'eau</p>
+                                <p class="text-gray-700">Des chaussures d'eau sont recommandées pour marcher sur les rochers et dans l'eau afin de protéger vos pieds.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Aventure en Pirogue dans la Baie d'Upi</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Laissez-vous glisser silencieusement sur les eaux émeraude de la Baie d'Upi à bord d'une pirogue traditionnelle. Entouré de rochers sculptés et de végétation dense, ce lieu offre une immersion totale dans la nature sauvage de l'île. Une randonnée pittoresque complétera cette expérience.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🛶 <strong>Balade en pirogue à voile</strong>: Naviguez paisiblement dans la Baie d'Upi, un lagon protégé aux eaux calmes, à bord d'une pirogue traditionnelle. Admirez les formations rocheuses uniques et la mangrove.</li>
+                            
+                                <li>🚶‍♂️ <strong>Randonnée vers la Piscine Naturelle</strong>: Après la pirogue, une courte randonnée à travers la forêt vous mènera à la Piscine Naturelle d'Oro (si non visitée ou pour une seconde fois) ou à une autre crique secrète. C'est une belle opportunité de découvrir la flore locale.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗣️ Guide local</p>
+                                <p class="text-gray-700">Les pirogues sont généralement conduites par des locaux qui partagent volontiers leurs connaissances sur l'île et ses légendes.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💧 Eau et chapeau</p>
+                                <p class="text-gray-700">N'oubliez pas d'emporter de l'eau et un chapeau pour vous protéger du soleil pendant la balade en pirogue et la randonnée.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Panoramas Éblouissants du Pic N'Ga</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Préparez-vous pour l'ascension du Pic N'Ga, le point culminant de l'Île des Pins. L'effort sera largement récompensé par une vue panoramique à couper le souffle sur l'ensemble de l'île, ses lagons turquoise et les îlots environnants. Une perspective unique sur ce paradis.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>⛰️ <strong>Ascension du Pic N'Ga</strong>: Gravissez le Pic N'Ga, point culminant de l'île, pour profiter d'une vue à 360 degrés sur les lagons, les baies et la forêt de pins colonnaires. La montée dure environ 1h30 et est de difficulté modérée.</li>
+                            
+                                <li>🧺 <strong>Pique-nique avec vue</strong>: Après l'effort, savourez un pique-nique bien mérité au sommet ou sur une aire aménagée à mi-chemin, en contemplant les paysages grandioses. C'est un moment de pure sérénité.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👟 Bonnes chaussures</p>
+                                <p class="text-gray-700">Des chaussures de marche robustes sont indispensables pour cette randonnée, le sentier pouvant être glissant par endroits.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📞 Guide recommandé</p>
+                                <p class="text-gray-700">Il est conseillé de prendre un guide local pour l'ascension, non seulement pour la sécurité mais aussi pour les explications sur la faune et la flore.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Culture Kanak et Histoire de l'Île</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez dans l'histoire et la culture Kanak en visitant la Grotte de la Reine Hortense, un lieu chargé de légendes. Explorez ensuite le village de Vao, le cœur administratif et culturel de l'île, pour un aperçu de la vie locale et des traditions ancestrales.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🗿 <strong>Visite de la Grotte de la Reine Hortense</strong>: Découvrez cette grotte historique qui servit de refuge à la reine Hortense. Ses formations rocheuses impressionnantes et les récits locaux en font un lieu fascinant.</li>
+                            
+                                <li>🏘️ <strong>Exploration du village de Vao</strong>: Promenez-vous dans le village principal de Vao, visitez son église et observez la vie quotidienne des habitants. C'est l'occasion de ressentir l'âme de l'Île des Pins.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🙏 Respect des coutumes</p>
+                                <p class="text-gray-700">Lors de la visite des villages ou de sites sacrés, il est important de respecter les coutumes locales, notamment en adoptant une tenue décente.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Artisanat local</p>
+                                <p class="text-gray-700">À Vao, vous trouverez peut-être des petits marchés ou des boutiques proposant de l'artisanat local, idéal pour ramener un souvenir authentique.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Évasion vers les Îlots du Sud</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Embarquez pour une journée d'exploration des îlots du sud de l'Île des Pins. Ces petits paradis isolés offrent des spots de snorkeling exceptionnels et des plages désertes. Profitez d'un pique-nique sur le sable blanc, loin de tout, pour une expérience d'isolement total.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🚤 <strong>Excursion en bateau aux îlots</strong>: Louez un bateau ou participez à une excursion organisée pour explorer les îlots du sud comme l'Îlot Brosse ou l'Îlot Nokanhui. Leurs lagons sont d'une beauté irréelle.</li>
+                            
+                                <li>🐠 <strong>Snorkeling et pique-nique</strong>: Plongez dans les eaux turquoise pour nager avec une multitude de poissons tropicaux et de coraux. Un pique-nique sur une plage déserte complétera cette journée de rêve.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Protection solaire maximale</p>
+                                <p class="text-gray-700">En mer, le soleil est encore plus intense. Renforcez votre protection solaire et hydratez-vous régulièrement.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗑️ Respect de l'environnement</p>
+                                <p class="text-gray-700">Ramenez tous vos déchets avec vous pour préserver la propreté et la beauté de ces îlots fragiles.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sentier des Baies et Plages Secrètes</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Partez à la découverte des côtes de l'Île des Pins par des sentiers moins fréquentés. Le Sentier des Baies vous mènera à des criques isolées et des points de vue imprenables. C'est l'occasion de trouver votre propre coin de paradis et de profiter de la tranquillité.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🚶‍♀️ <strong>Randonnée sur le Sentier des Baies</strong>: Explorez les sentiers côtiers qui relient plusieurs baies et plages moins connues. Cette balade offre des panoramas magnifiques et la possibilité de découvrir des criques secrètes.</li>
+                            
+                                <li>🏖️ <strong>Détente sur une plage isolée</strong>: Trouvez une petite plage à l'écart pour un moment de pure tranquillité. Baignez-vous dans les eaux calmes et profitez du silence, bercé par le bruit des vagues.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🗺️ Carte et eau</p>
+                                <p class="text-gray-700">Munissez-vous d'une carte de l'île et d'une quantité suffisante d'eau, car certains sentiers peuvent être moins indiqués.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">👟 Chaussures confortables</p>
+                                <p class="text-gray-700">Prévoyez des chaussures de marche confortables pour cette journée de découverte à pied.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Immersion Locale ou Journée Détente</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Choisissez entre une expérience authentique de pêche traditionnelle avec les locaux, pour apprendre leurs techniques ancestrales, ou une journée de pure détente à profiter des infrastructures de votre hébergement. L'occasion de vivre l'île à votre rythme et selon vos envies.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🎣 <strong>Initiation à la pêche traditionnelle</strong>: Accompagnez des pêcheurs locaux pour une initiation à leurs techniques ancestrales. C'est une expérience culturelle enrichissante et l'occasion de partager un moment authentique.</li>
+                            
+                                <li>🧘‍♀️ <strong>Journée détente et bien-être</strong>: Si vous préférez la relaxation, profitez des services de votre hôtel (spa, piscine) ou simplement d'une journée de farniente sur la plage. Laissez-vous bercer par la douceur de vivre insulaire.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🤝 Soutien local</p>
+                                <p class="text-gray-700">Participer à des activités proposées par les habitants est une excellente façon de soutenir l'économie locale et de découvrir la culture de manière authentique.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📖 Lecture et farniente</p>
+                                <p class="text-gray-700">Cette journée est parfaite pour rattraper vos lectures ou simplement ne rien faire, en admirant le paysage.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Journée Libre, Vos Coups de Cœur</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Cette journée est entièrement à votre disposition pour revisiter un lieu qui vous a particulièrement marqué, explorer un coin de l'île que vous n'avez pas encore eu le temps de voir, ou simplement vous prélasser. L'Île des Pins regorge de trésors, à vous de choisir votre aventure du jour.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🔄 <strong>Revisite d'un lieu favori</strong>: Retournez à la Piscine Naturelle, aux plages de Kuto ou Kanumera, ou à tout autre endroit qui vous a enchanté. Profitez-en pour immortaliser ces moments.</li>
+                            
+                                <li>🚲 <strong>Exploration à vélo ou scooter</strong>: Louez un vélo ou un scooter pour explorer les routes intérieures de l'île à votre rythme, découvrant des paysages inattendus et des petits villages.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛵 Location de véhicule</p>
+                                <p class="text-gray-700">Des scooters ou vélos peuvent être loués dans certains hôtels ou au village de Vao, offrant une grande liberté de mouvement.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📸 Photos souvenirs</p>
+                                <p class="text-gray-700">C'est le moment idéal pour prendre les dernières photos des paysages qui vous ont le plus touché.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Coucher de Soleil et Saveurs Locales</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de vos dernières heures sur l'île en admirant un magnifique coucher de soleil sur le lagon, un spectacle quotidien mais toujours enchanteur. Terminez la journée par un dîner spécial, savourant les délices de la cuisine calédonienne, notamment les fruits de mer frais.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🌅 <strong>Coucher de soleil sur le lagon</strong>: Trouvez un spot idéal, comme la Baie de Kuto ou une terrasse d'hôtel, pour admirer les couleurs flamboyantes du coucher de soleil sur le Pacifique. C'est un moment magique.</li>
+                            
+                                <li>🍽️ <strong>Dîner aux saveurs locales</strong>: Offrez-vous un dîner mémorable dans un restaurant proposant des spécialités locales, comme la langouste fraîche ou le bougna, plat traditionnel kanak. C'est une explosion de saveurs.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🦞 Spécialités</p>
+                                <p class="text-gray-700">La langouste est une spécialité de l'Île des Pins, souvent pêchée localement et préparée de diverses manières.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🥂 Moment romantique</p>
+                                <p class="text-gray-700">Un dîner en bord de mer au coucher du soleil est une expérience très romantique à ne pas manquer.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers Plaisirs Insulaires</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Avant de quitter ce paradis, profitez d'une dernière matinée pour vous imprégner de l'ambiance. Flânez, faites quelques achats de souvenirs ou savourez un dernier café face au lagon. Une dernière baignade rafraîchissante peut clôturer ce séjour en beauté.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🛍️ <strong>Achats de souvenirs locaux</strong>: Parcourez les petites boutiques pour trouver des objets artisanaux, des paréos ou des bijoux. C'est l'occasion de ramener un petit morceau de l'Île des Pins chez vous.</li>
+                            
+                                <li>💦 <strong>Dernière baignade rafraîchissante</strong>: Profitez d'une dernière immersion dans les eaux claires de l'île. Une baignade matinale est parfaite pour se rafraîchir avant le départ.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Idées cadeaux</p>
+                                <p class="text-gray-700">Pensez aux coquillages (si autorisés), aux sculptures sur bois ou aux tissus imprimés comme souvenirs.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Check-out</p>
+                                <p class="text-gray-700">Organisez votre check-out et le transfert vers l'aéroport en fonction de l'horaire de votre vol.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-14" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2">Jour 14</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Retour vers la Métropole</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Il est temps de dire au revoir à l'Île des Pins. Après un court vol vers Nouméa, vous prendrez votre vol long-courrier de retour vers Paris. Emportez avec vous des souvenirs inoubliables de ce voyage exceptionnel au cœur du Pacifique.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left">
+                            
+                                <li>🛫 <strong>Départ de l'Île des Pins</strong>: Transfert à l'aéroport de Moué pour votre vol vers Nouméa. Profitez des dernières vues aériennes de l'île.</li>
+                            
+                                <li>✈️ <strong>Vol retour vers Paris</strong>: Embarquement à Nouméa pour votre vol long-courrier vers Paris. Revivez les moments forts de votre séjour durant le trajet.</li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/shepper1/Ile-des-pins-nouvelle-caledonie/main/jour14.jpg" class="w-full h-64 object-cover" alt="Jour 14">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🛄 Bagages</p>
+                                <p class="text-gray-700">Vérifiez les restrictions de poids et de taille des bagages pour vos vols internationaux et domestiques.</p>
+                            </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💭 Souvenirs</p>
+                                <p class="text-gray-700">Gardez précieusement les photos et les souvenirs de votre voyage pour prolonger la magie de l'Île des Pins.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+    <footer id="pratique" class="bg-white border-t border-gray-200 pt-16 pb-10 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 mb-12">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget vol: </strong>2500€/pers (Paris - Nouméa A/R, Nouméa - Île des Pins A/R)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget transports: </strong>350€/pers (navettes aéroport, location scooter/vélo, taxis, excursions bateau)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget repas: </strong>780€/pers (environ 65€/jour pour 12 jours, incluant restaurants et quelques repas légers)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget logement: </strong>2400€/pers (environ 200€/nuit pour 12 nuits en hôtel/bungalow de catégorie moyenne)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed"><strong>Budget activités: </strong>450€/pers (excursions pirogue, snorkeling, entrées sites, guides)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed">Les périodes idéales pour ce séjour sont les mois de Mai à Novembre, avec une préférence pour Septembre à Novembre pour des eaux plus chaudes et un temps plus stable.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2">
+                    <span>🧳</span> À savoir
+                </h4>
+                <ul class="text-sm text-gray-600 space-y-3">
+
+                        <li><strong>💰 :</strong> La monnaie est le Franc Pacifique (XPF). 1€ équivaut à environ 119 XPF. La langue officielle est le français.</li>
+                    
+                        <li><strong>🔌 :</strong> Les prises électriques sont de type F (européen). Une carte SIM locale (Mobilis ou Moov) ou une eSIM est recommandée pour la connectivité.</li>
+                    
+                        <li><strong>💉 :</strong> Aucun vaccin obligatoire, mais protection solaire et anti-moustiques sont indispensables. Respectez les coutumes Kanak.</li>
+                    
+                        <li><strong>🌡️ :</strong> Les températures varient entre 20 et 28°C en période sèche. Prévoyez des vêtements légers et un imperméable léger pour les averses tropicales.</li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2"><span>🔗</span> Liens Utiles</h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://shepper1.github.io/Ile des pins nouvelle-caledonie/map.html" target="_blank" class="hover:underline flex items-center gap-2"><strong>🗺️ Carte</strong></a></li>
+                    
+                        <li><a href="https://www.nouvellecaledonie.travel/" target="_blank" class="hover:underline flex items-center gap-2"><strong>📘 Tourisme Nouvelle-Calédonie</strong></a></li>
+                    
+                        <li><a href="https://www.air-caledonie.nc/" target="_blank" class="hover:underline flex items-center gap-2"><strong>✈️ Air Calédonie</strong></a></li>
+                    
+                        <li><a href="http://www.meteo.nc/" target="_blank" class="hover:underline flex items-center gap-2"><strong>🌤️ Météo France Nouvelle-Calédonie</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="text-center border-t border-gray-100 pt-8">
+            <p class="font-serif text-2xl text-template-roche mb-2">Ile des pins nouvelle-caledonie</p>
+            <p class="text-xs text-gray-400">© 2025 - Roadmap</p>
+        </div>
+    </footer>
+
+    <script>
+        // 1. Gestion de l'affichage du menu au scroll
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+
+        // 2. Détection de l'étape active
+        const observerOptions = {
+            root: null,
+            rootMargin: '-40% 0px -60% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+
+                    document.querySelectorAll('.nav-item-desktop').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (activeId.includes('jour') && linkHref === 'jour-1') {
+                            link.classList.add('text-template-ocre');
+                        } else if (activeId === 'pratique' && linkHref === 'pratique') {
+                            link.classList.add('text-template-ocre');
+                        } else {
+                            link.classList.remove('text-template-ocre');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('div[id^="jour-"], footer#pratique').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
