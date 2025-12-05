@@ -1,0 +1,417 @@
+{
+  "pays": "Nouvelle-Calédonie",
+  "drapeau": "🇳🇨",
+  "symbole": "🌴",
+  "titre": "Évasion Turquoise : L'Île des Pins, Joyau du Pacifique",
+  "budget_total": "6500€/personne",
+  "duree": "14 jours uniquement",
+  "temps_vol": "Environ 24-30 heures (Paris - Nouméa)",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "✈️",
+      "titre": "Envol vers le Paradis Pacifique",
+      "legende": "Votre aventure commence par un long voyage transcontinental. Préparez-vous à traverser les fuseaux horaires et à laisser derrière vous le quotidien pour une immersion totale dans la beauté sauvage de la Nouvelle-Calédonie. Le décollage de Paris marque le début d'une expérience inoubliable.",
+      "lieu": "Vol Paris - Nouméa",
+      "activites": [
+        "✈️ <strong>Départ de Paris</strong>: Embarquez pour un vol long-courrier, prélude à votre échappée belle vers l'hémisphère sud. Profitez du voyage pour vous détendre et vous immerger dans l'ambiance des vacances."
+      ],
+      "illustration": "jour1.jpg",
+      "encarts": [
+        {
+          "symbole": "ℹ️",
+          "titre": "Conseil de vol",
+          "texte": "Prévoyez un oreiller de voyage, des bouchons d'oreille et un masque de sommeil pour optimiser votre confort durant ce long trajet."
+        },
+        {
+          "symbole": "⌚",
+          "titre": "Décalage horaire",
+          "texte": "L'Île des Pins a un décalage de +9 heures en été et +10 heures en hiver par rapport à Paris. Anticipez le jet lag."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🛬",
+      "titre": "Douce arrivée sur l'Île des Pins",
+      "legende": "Après un vol intérieur depuis Nouméa, vous atterrissez sur l'Île des Pins, un véritable joyau. L'air marin et la végétation luxuriante vous accueillent. Prenez le temps de vous installer et de faire une première balade sereine pour vous imprégner de l'atmosphère unique de l'île.",
+      "lieu": "Île des Pins",
+      "activites": [
+        "🛬 <strong>Arrivée à l'Île des Pins</strong>: Atterrissage à l'aéroport de Moué, suivi d'un transfert vers votre hébergement. Laissez-vous charmer par les premiers aperçus de cette île paradisiaque.",
+        "🚶‍♀️ <strong>Balade légère et installation</strong>: Profitez de l'après-midi pour vous détendre, vous installer et faire une courte promenade autour de votre hôtel. C'est le moment idéal pour s'habituer au rythme insulaire."
+      ],
+      "illustration": "jour2.jpg",
+      "encarts": [
+        {
+          "symbole": "🚗",
+          "titre": "Transfert aéroport",
+          "texte": "Les hébergements organisent généralement des navettes depuis l'aéroport de Moué. Pensez à le réserver à l'avance."
+        },
+        {
+          "symbole": "☀️",
+          "titre": "Protection solaire",
+          "texte": "Le soleil tropical est intense. N'oubliez pas crème solaire, chapeau et lunettes dès votre arrivée."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🏖️",
+      "titre": "Les Plages Iconiques de Kuto et Kanumera",
+      "legende": "Plongez dans les eaux cristallines des plages de Kuto et Kanumera, deux des plus célèbres de l'île. Le sable blanc et fin invite à la détente, tandis que les fonds marins regorgent de vie. Une journée dédiée au farniente et à la découverte de la biodiversité marine.",
+      "lieu": "Plages de Kuto et Kanumera, Île des Pins",
+      "activites": [
+        "🏖️ <strong>Détente à la Baie de Kuto</strong>: Profitez du sable blanc immaculé et des eaux turquoise de la Baie de Kuto, idéale pour la baignade et la relaxation. C'est une des plus belles plages du monde.",
+        "🐠 <strong>Snorkeling à la Baie de Kanumera</strong>: Explorez les fonds marins peu profonds de la Baie de Kanumera, célèbre pour son rocher sacré et sa richesse sous-marine. N'oubliez pas votre masque et tuba."
+      ],
+      "illustration": "jour3.jpg",
+      "encarts": [
+        {
+          "symbole": "🗿",
+          "titre": "Rocher sacré",
+          "texte": "Le rocher de Kanumera est un lieu sacré pour les Kanaks. Il est interdit d'y monter ou de le toucher par respect pour la culture locale."
+        },
+        {
+          "symbole": "🍽️",
+          "titre": "Restauration locale",
+          "texte": "Des petits \"snacks\" locaux proposent souvent des plats simples et délicieux à proximité des plages, comme du poisson grillé."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "🏊‍♀️",
+      "titre": "La Magie de la Piscine Naturelle d'Oro",
+      "legende": "Une journée dédiée à l'exploration de la légendaire Piscine Naturelle d'Oro. Ce bassin d'eau de mer, protégé par une barrière rocheuse, est un aquarium géant à ciel ouvert. Nagez au milieu des poissons multicolores dans un cadre idyllique et préservé.",
+      "lieu": "Piscine Naturelle d'Oro, Île des Pins",
+      "activites": [
+        "🚶‍♀️ <strong>Randonnée vers la Piscine Naturelle</strong>: Empruntez un sentier ombragé le long de la rivière Oro pour atteindre ce joyau caché. La marche est facile et agréable, traversant une forêt luxuriante.",
+        "🐠 <strong>Baignade et snorkeling à Oro</strong>: Plongez dans les eaux cristallines de la Piscine Naturelle, un véritable aquarium géant où poissons et coraux se côtoient. C'est une expérience magique et inoubliable."
+      ],
+      "illustration": "jour4.jpg",
+      "encarts": [
+        {
+          "symbole": "⚠️",
+          "titre": "Accès",
+          "texte": "L'accès à la Piscine Naturelle peut être soumis à une petite taxe locale. Prévoyez de la monnaie."
+        },
+        {
+          "symbole": "👟",
+          "titre": "Chaussures d'eau",
+          "texte": "Des chaussures d'eau sont recommandées pour marcher sur les rochers et dans l'eau afin de protéger vos pieds."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🛶",
+      "titre": "Aventure en Pirogue dans la Baie d'Upi",
+      "legende": "Laissez-vous glisser silencieusement sur les eaux émeraude de la Baie d'Upi à bord d'une pirogue traditionnelle. Entouré de rochers sculptés et de végétation dense, ce lieu offre une immersion totale dans la nature sauvage de l'île. Une randonnée pittoresque complétera cette expérience.",
+      "lieu": "Baie d'Upi, Île des Pins",
+      "activites": [
+        "🛶 <strong>Balade en pirogue à voile</strong>: Naviguez paisiblement dans la Baie d'Upi, un lagon protégé aux eaux calmes, à bord d'une pirogue traditionnelle. Admirez les formations rocheuses uniques et la mangrove.",
+        "🚶‍♂️ <strong>Randonnée vers la Piscine Naturelle</strong>: Après la pirogue, une courte randonnée à travers la forêt vous mènera à la Piscine Naturelle d'Oro (si non visitée ou pour une seconde fois) ou à une autre crique secrète. C'est une belle opportunité de découvrir la flore locale."
+      ],
+      "illustration": "jour5.jpg",
+      "encarts": [
+        {
+          "symbole": "🗣️",
+          "titre": "Guide local",
+          "texte": "Les pirogues sont généralement conduites par des locaux qui partagent volontiers leurs connaissances sur l'île et ses légendes."
+        },
+        {
+          "symbole": "💧",
+          "titre": "Eau et chapeau",
+          "texte": "N'oubliez pas d'emporter de l'eau et un chapeau pour vous protéger du soleil pendant la balade en pirogue et la randonnée."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "⛰️",
+      "titre": "Panoramas Éblouissants du Pic N'Ga",
+      "legende": "Préparez-vous pour l'ascension du Pic N'Ga, le point culminant de l'Île des Pins. L'effort sera largement récompensé par une vue panoramique à couper le souffle sur l'ensemble de l'île, ses lagons turquoise et les îlots environnants. Une perspective unique sur ce paradis.",
+      "lieu": "Pic N'Ga, Île des Pins",
+      "activites": [
+        "⛰️ <strong>Ascension du Pic N'Ga</strong>: Gravissez le Pic N'Ga, point culminant de l'île, pour profiter d'une vue à 360 degrés sur les lagons, les baies et la forêt de pins colonnaires. La montée dure environ 1h30 et est de difficulté modérée.",
+        "🧺 <strong>Pique-nique avec vue</strong>: Après l'effort, savourez un pique-nique bien mérité au sommet ou sur une aire aménagée à mi-chemin, en contemplant les paysages grandioses. C'est un moment de pure sérénité."
+      ],
+      "illustration": "jour6.jpg",
+      "encarts": [
+        {
+          "symbole": "👟",
+          "titre": "Bonnes chaussures",
+          "texte": "Des chaussures de marche robustes sont indispensables pour cette randonnée, le sentier pouvant être glissant par endroits."
+        },
+        {
+          "symbole": "📞",
+          "titre": "Guide recommandé",
+          "texte": "Il est conseillé de prendre un guide local pour l'ascension, non seulement pour la sécurité mais aussi pour les explications sur la faune et la flore."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🗿",
+      "titre": "Culture Kanak et Histoire de l'Île",
+      "legende": "Plongez dans l'histoire et la culture Kanak en visitant la Grotte de la Reine Hortense, un lieu chargé de légendes. Explorez ensuite le village de Vao, le cœur administratif et culturel de l'île, pour un aperçu de la vie locale et des traditions ancestrales.",
+      "lieu": "Grotte de la Reine Hortense et Vao, Île des Pins",
+      "activites": [
+        "🗿 <strong>Visite de la Grotte de la Reine Hortense</strong>: Découvrez cette grotte historique qui servit de refuge à la reine Hortense. Ses formations rocheuses impressionnantes et les récits locaux en font un lieu fascinant.",
+        "🏘️ <strong>Exploration du village de Vao</strong>: Promenez-vous dans le village principal de Vao, visitez son église et observez la vie quotidienne des habitants. C'est l'occasion de ressentir l'âme de l'Île des Pins."
+      ],
+      "illustration": "jour7.jpg",
+      "encarts": [
+        {
+          "symbole": "🙏",
+          "titre": "Respect des coutumes",
+          "texte": "Lors de la visite des villages ou de sites sacrés, il est important de respecter les coutumes locales, notamment en adoptant une tenue décente."
+        },
+        {
+          "symbole": "🎁",
+          "titre": "Artisanat local",
+          "texte": "À Vao, vous trouverez peut-être des petits marchés ou des boutiques proposant de l'artisanat local, idéal pour ramener un souvenir authentique."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🚤",
+      "titre": "Évasion vers les Îlots du Sud",
+      "legende": "Embarquez pour une journée d'exploration des îlots du sud de l'Île des Pins. Ces petits paradis isolés offrent des spots de snorkeling exceptionnels et des plages désertes. Profitez d'un pique-nique sur le sable blanc, loin de tout, pour une expérience d'isolement total.",
+      "lieu": "Îlots du Sud, Île des Pins",
+      "activites": [
+        "🚤 <strong>Excursion en bateau aux îlots</strong>: Louez un bateau ou participez à une excursion organisée pour explorer les îlots du sud comme l'Îlot Brosse ou l'Îlot Nokanhui. Leurs lagons sont d'une beauté irréelle.",
+        "🐠 <strong>Snorkeling et pique-nique</strong>: Plongez dans les eaux turquoise pour nager avec une multitude de poissons tropicaux et de coraux. Un pique-nique sur une plage déserte complétera cette journée de rêve."
+      ],
+      "illustration": "jour8.jpg",
+      "encarts": [
+        {
+          "symbole": "☀️",
+          "titre": "Protection solaire maximale",
+          "texte": "En mer, le soleil est encore plus intense. Renforcez votre protection solaire et hydratez-vous régulièrement."
+        },
+        {
+          "symbole": "🗑️",
+          "titre": "Respect de l'environnement",
+          "texte": "Ramenez tous vos déchets avec vous pour préserver la propreté et la beauté de ces îlots fragiles."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🚶‍♀️",
+      "titre": "Sentier des Baies et Plages Secrètes",
+      "legende": "Partez à la découverte des côtes de l'Île des Pins par des sentiers moins fréquentés. Le Sentier des Baies vous mènera à des criques isolées et des points de vue imprenables. C'est l'occasion de trouver votre propre coin de paradis et de profiter de la tranquillité.",
+      "lieu": "Sentier des Baies, Île des Pins",
+      "activites": [
+        "🚶‍♀️ <strong>Randonnée sur le Sentier des Baies</strong>: Explorez les sentiers côtiers qui relient plusieurs baies et plages moins connues. Cette balade offre des panoramas magnifiques et la possibilité de découvrir des criques secrètes.",
+        "🏖️ <strong>Détente sur une plage isolée</strong>: Trouvez une petite plage à l'écart pour un moment de pure tranquillité. Baignez-vous dans les eaux calmes et profitez du silence, bercé par le bruit des vagues."
+      ],
+      "illustration": "jour9.jpg",
+      "encarts": [
+        {
+          "symbole": "🗺️",
+          "titre": "Carte et eau",
+          "texte": "Munissez-vous d'une carte de l'île et d'une quantité suffisante d'eau, car certains sentiers peuvent être moins indiqués."
+        },
+        {
+          "symbole": "👟",
+          "titre": "Chaussures confortables",
+          "texte": "Prévoyez des chaussures de marche confortables pour cette journée de découverte à pied."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🎣",
+      "titre": "Immersion Locale ou Journée Détente",
+      "legende": "Choisissez entre une expérience authentique de pêche traditionnelle avec les locaux, pour apprendre leurs techniques ancestrales, ou une journée de pure détente à profiter des infrastructures de votre hébergement. L'occasion de vivre l'île à votre rythme et selon vos envies.",
+      "lieu": "Île des Pins",
+      "activites": [
+        "🎣 <strong>Initiation à la pêche traditionnelle</strong>: Accompagnez des pêcheurs locaux pour une initiation à leurs techniques ancestrales. C'est une expérience culturelle enrichissante et l'occasion de partager un moment authentique.",
+        "🧘‍♀️ <strong>Journée détente et bien-être</strong>: Si vous préférez la relaxation, profitez des services de votre hôtel (spa, piscine) ou simplement d'une journée de farniente sur la plage. Laissez-vous bercer par la douceur de vivre insulaire."
+      ],
+      "illustration": "jour10.jpg",
+      "encarts": [
+        {
+          "symbole": "🤝",
+          "titre": "Soutien local",
+          "texte": "Participer à des activités proposées par les habitants est une excellente façon de soutenir l'économie locale et de découvrir la culture de manière authentique."
+        },
+        {
+          "symbole": "📖",
+          "titre": "Lecture et farniente",
+          "texte": "Cette journée est parfaite pour rattraper vos lectures ou simplement ne rien faire, en admirant le paysage."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🌴",
+      "titre": "Journée Libre, Vos Coups de Cœur",
+      "legende": "Cette journée est entièrement à votre disposition pour revisiter un lieu qui vous a particulièrement marqué, explorer un coin de l'île que vous n'avez pas encore eu le temps de voir, ou simplement vous prélasser. L'Île des Pins regorge de trésors, à vous de choisir votre aventure du jour.",
+      "lieu": "Île des Pins",
+      "activites": [
+        "🔄 <strong>Revisite d'un lieu favori</strong>: Retournez à la Piscine Naturelle, aux plages de Kuto ou Kanumera, ou à tout autre endroit qui vous a enchanté. Profitez-en pour immortaliser ces moments.",
+        "🚲 <strong>Exploration à vélo ou scooter</strong>: Louez un vélo ou un scooter pour explorer les routes intérieures de l'île à votre rythme, découvrant des paysages inattendus et des petits villages."
+      ],
+      "illustration": "jour11.jpg",
+      "encarts": [
+        {
+          "symbole": "🛵",
+          "titre": "Location de véhicule",
+          "texte": "Des scooters ou vélos peuvent être loués dans certains hôtels ou au village de Vao, offrant une grande liberté de mouvement."
+        },
+        {
+          "symbole": "📸",
+          "titre": "Photos souvenirs",
+          "texte": "C'est le moment idéal pour prendre les dernières photos des paysages qui vous ont le plus touché."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "🌅",
+      "titre": "Coucher de Soleil et Saveurs Locales",
+      "legende": "Profitez de vos dernières heures sur l'île en admirant un magnifique coucher de soleil sur le lagon, un spectacle quotidien mais toujours enchanteur. Terminez la journée par un dîner spécial, savourant les délices de la cuisine calédonienne, notamment les fruits de mer frais.",
+      "lieu": "Île des Pins",
+      "activites": [
+        "🌅 <strong>Coucher de soleil sur le lagon</strong>: Trouvez un spot idéal, comme la Baie de Kuto ou une terrasse d'hôtel, pour admirer les couleurs flamboyantes du coucher de soleil sur le Pacifique. C'est un moment magique.",
+        "🍽️ <strong>Dîner aux saveurs locales</strong>: Offrez-vous un dîner mémorable dans un restaurant proposant des spécialités locales, comme la langouste fraîche ou le bougna, plat traditionnel kanak. C'est une explosion de saveurs."
+      ],
+      "illustration": "jour12.jpg",
+      "encarts": [
+        {
+          "symbole": "🦞",
+          "titre": "Spécialités",
+          "texte": "La langouste est une spécialité de l'Île des Pins, souvent pêchée localement et préparée de diverses manières."
+        },
+        {
+          "symbole": "🥂",
+          "titre": "Moment romantique",
+          "texte": "Un dîner en bord de mer au coucher du soleil est une expérience très romantique à ne pas manquer."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "🛍️",
+      "titre": "Derniers Plaisirs Insulaires",
+      "legende": "Avant de quitter ce paradis, profitez d'une dernière matinée pour vous imprégner de l'ambiance. Flânez, faites quelques achats de souvenirs ou savourez un dernier café face au lagon. Une dernière baignade rafraîchissante peut clôturer ce séjour en beauté.",
+      "lieu": "Île des Pins",
+      "activites": [
+        "🛍️ <strong>Achats de souvenirs locaux</strong>: Parcourez les petites boutiques pour trouver des objets artisanaux, des paréos ou des bijoux. C'est l'occasion de ramener un petit morceau de l'Île des Pins chez vous.",
+        "💦 <strong>Dernière baignade rafraîchissante</strong>: Profitez d'une dernière immersion dans les eaux claires de l'île. Une baignade matinale est parfaite pour se rafraîchir avant le départ."
+      ],
+      "illustration": "jour13.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Idées cadeaux",
+          "texte": "Pensez aux coquillages (si autorisés), aux sculptures sur bois ou aux tissus imprimés comme souvenirs."
+        },
+        {
+          "symbole": "⏰",
+          "titre": "Check-out",
+          "texte": "Organisez votre check-out et le transfert vers l'aéroport en fonction de l'horaire de votre vol."
+        }
+      ]
+    },
+    {
+      "jour": 14,
+      "symbole": "🛫",
+      "titre": "Retour vers la Métropole",
+      "legende": "Il est temps de dire au revoir à l'Île des Pins. Après un court vol vers Nouméa, vous prendrez votre vol long-courrier de retour vers Paris. Emportez avec vous des souvenirs inoubliables de ce voyage exceptionnel au cœur du Pacifique.",
+      "lieu": "Vol Île des Pins - Nouméa - Paris",
+      "activites": [
+        "🛫 <strong>Départ de l'Île des Pins</strong>: Transfert à l'aéroport de Moué pour votre vol vers Nouméa. Profitez des dernières vues aériennes de l'île.",
+        "✈️ <strong>Vol retour vers Paris</strong>: Embarquement à Nouméa pour votre vol long-courrier vers Paris. Revivez les moments forts de votre séjour durant le trajet."
+      ],
+      "illustration": "jour14.jpg",
+      "encarts": [
+        {
+          "symbole": "🛄",
+          "titre": "Bagages",
+          "texte": "Vérifiez les restrictions de poids et de taille des bagages pour vos vols internationaux et domestiques."
+        },
+        {
+          "symbole": "💭",
+          "titre": "Souvenirs",
+          "texte": "Gardez précieusement les photos et les souvenirs de votre voyage pour prolonger la magie de l'Île des Pins."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    {
+      "titre": "Budget vol:",
+      "legende": "2500€/pers (Paris - Nouméa A/R, Nouméa - Île des Pins A/R)",
+      "symbole": "🛬"
+    },
+    {
+      "titre": "Budget transports:",
+      "legende": "350€/pers (navettes aéroport, location scooter/vélo, taxis, excursions bateau)",
+      "symbole": "🚆"
+    },
+    {
+      "titre": "Budget repas:",
+      "legende": "780€/pers (environ 65€/jour pour 12 jours, incluant restaurants et quelques repas légers)",
+      "symbole": "🥗"
+    },
+    {
+      "titre": "Budget logement:",
+      "legende": "2400€/pers (environ 200€/nuit pour 12 nuits en hôtel/bungalow de catégorie moyenne)",
+      "symbole": "🛏️"
+    },
+    {
+      "titre": "Budget activités:",
+      "legende": "450€/pers (excursions pirogue, snorkeling, entrées sites, guides)",
+      "symbole": "🎭"
+    }
+  ],
+  "periodes_ideales": [
+    {
+      "titre": "Les périodes idéales pour ce séjour sont les mois de Mai à Novembre, avec une préférence pour Septembre à Novembre pour des eaux plus chaudes et un temps plus stable.",
+      "symbole": "☀️"
+    }
+  ],
+  "infos_pratiques": [
+    {
+      "titre": "La monnaie est le Franc Pacifique (XPF). 1€ équivaut à environ 119 XPF. La langue officielle est le français.",
+      "symbole": "💰"
+    },
+    {
+      "titre": "Les prises électriques sont de type F (européen). Une carte SIM locale (Mobilis ou Moov) ou une eSIM est recommandée pour la connectivité.",
+      "symbole": "🔌"
+    },
+    {
+      "titre": "Aucun vaccin obligatoire, mais protection solaire et anti-moustiques sont indispensables. Respectez les coutumes Kanak.",
+      "symbole": "💉"
+    },
+    {
+      "titre": "Les températures varient entre 20 et 28°C en période sèche. Prévoyez des vêtements légers et un imperméable léger pour les averses tropicales.",
+      "symbole": "🌡️"
+    }
+  ],
+  "liens_utiles": [
+    {
+      "legende": "Informations officielles et inspirations de voyage",
+      "titre": "Tourisme Nouvelle-Calédonie",
+      "url": "https://www.nouvellecaledonie.travel/",
+      "symbole": "📘"
+    },
+    {
+      "legende": "Horaires et réservations des vols intérieurs",
+      "titre": "Air Calédonie",
+      "url": "https://www.air-caledonie.nc/",
+      "symbole": "✈️"
+    },
+    {
+      "legende": "Prévisions météo détaillées pour l'île",
+      "titre": "Météo France Nouvelle-Calédonie",
+      "url": "http://www.meteo.nc/",
+      "symbole": "🌤️"
+    }
+  ]
+}
